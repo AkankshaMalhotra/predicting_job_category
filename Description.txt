@@ -1,0 +1,19 @@
+The problem given to me, was of text categorization. The machine learning approach for this problem that first came into my mind is of naive bayes classification, as it is popularly used for spam detection model, a problem for which I had developed a code in R language in December, 2013. 
+
+Before applying the model, loading of the data useing pandas and numpy libraries is done. I have also merged Job Title and Job Description into one vector. So, for each job id, I have document that I can send for generating termdocument matrix.
+
+I cleaned the data, by removing stopwords and punctuations and converting all the words into lower case.
+I have few ideas which I want to implement in future, such as to apply lemmatization and stemming on words, applying spell correction and see if the accuracy is increased or not.
+
+The termdocument matrix is a sparse matrix which is used for storing the frequency of words that occur in the documents. For generating term document matrix, I used a module from textmining library. For storing the matrix, in one program, i have used csv file and in another program, i have first appended it to list and then converted that list to numpy array. The reason behind this was as first line of the TDM has string and is not used in training the model. Numpy array being homogeneous will convert every entry into string. Since appending is fast process in list so I have used list and conerting the list to numpy array is also a fast process.
+
+Before validation of process I have splitted the data set in the ratio 2:1 to form training and testing set.
+In one program I have directly sliced the data according to the ratio, and in another program I have randomly assigned data to training set in same ratio. 
+
+Naive bayes Classification model, uses bag of words approach, that is order of words do not matter, but their frequency does. I have used multinomial Naive bayes which is based on bayes theorem. Since, some features might not be present in the document,causing the likelihood and posterior probability to become zero therfore Lapalcian parameter is kept 1 in program.  
+
+Although, I had formulated this whole algorithm and written almost whole code within 2 days, the delay was caused due to one typing error which was going unnoticed and was the cause of very low accuracy. I am also going to try other models and submit codes as early as possible.
+
+
+
+

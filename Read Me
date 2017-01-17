@@ -1,0 +1,20 @@
+* Go to directory in which code is stored in terminal
+* The program can be run by typing on terminal python ./finalas.py
+* Please enter the whole path to the training data
+* In finalas.py, testing and training data is made by random distribution 
+
+I have tested this program on corpus having 3471 and 6 job categories
+This gave me accuracy of 94.5%
+
+
+I have done many version for the same method, experimenting with divison of testing and training data, various data types and how to handle TermDocumentMatrix
+
+One more version of program I have attached in which I have used different method for storing TermDocumentMatrix and method of division of testing data and training data is different.
+* Go to directory in which code is stored in terminal
+* The program can be run by typing on terminal python ./naive.py
+* Please enter the whole path to the training data
+* In naive.py, testing and training data is made by simply slicing data in the proportion 2/3 and 1/3
+
+
+I have tested this program on corpus having 3471 and 6 job categories
+This gave me accuracy of 95.08%
